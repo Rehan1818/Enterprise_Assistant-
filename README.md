@@ -1,6 +1,11 @@
-# 🤖 Enterprise Assistant
+# 🌐 Enterprise Assistant — AI-Powered RAG System for Enterprise Knowledge Retrieval
+A full-stack Retrieval-Augmented Generation (RAG)–based enterprise assistant designed to help organizations retrieve information from policies, HR manuals, SOPs, compliance docs, legal documents, and corporate emails — using natural language queries.
 
-This project is a full-stack Retrieval-Augmented Generation (RAG) system designed to help organizations search, understand, and interact with their internal documents using natural language. It combines a modern React dashboard, a Node.js backend, and a FastAPI-powered ML service to deliver accurate, context-aware answers sourced directly from uploaded PDFs and policy files.
+This project brings together:
+⚛️ React.js — Frontend
+🚀 Express.js (Node.js) — Backend API
+🧠 FastAPI + FAISS + LLM (Gemini/OpenAI) — RAG Pipeline
+🗂️ Company-wise Multi-Index Architecture — Secure, scalable document retrieval
 
 ---
 
@@ -9,6 +14,9 @@ This project is a full-stack Retrieval-Augmented Generation (RAG) system designe
 - [Screenshots/UI](#screenshots-ui)
 - [Overview](#overview)
 - [Key Features](#key-features)
+- [System Architechture](#system-architechture)
+- [RAG Workflow](#rag-workflow)
+- [Tech Stack](#tech-stack)
 
 ---
 ## Screenshots/UI
@@ -23,19 +31,51 @@ ChatBot Interface
 
 
 
-## 🌱 Overview
-The Enterprise Knowledge Assistant is a Retrieval-Augmented Generation (RAG) system designed to help organizations interact intelligently with their internal documents. Instead of manually searching large policy PDFs, employees can simply ask questions in natural language and receive accurate, context-aware answers sourced directly from the uploaded documents.
-
-This project integrates a modern full-stack workflow — React.js + Express.js + FastAPI + FAISS + Gemini API — to deliver fast document indexing, semantic search, and LLM-generated responses, wrapped in a clean, user-friendly interface for admins and staff.
 
 
-## Key Features
-- 📄 *Document upload & management*
-- 🔍 *Semantic search with FAISS*
-- 🤖 *RAG pipeline with Gemini LLM*
-- 🖥️ *React + Tailwind admin UI*
-- 🔗 *Express.js + FastAPI backend*
-- 👥 *Admin & staff roles with JWT auth*
-- ⚡ *Modular, scalable architecture*
-  
+## 🔎 Overview
 
+Enterprise Assistant is an intelligent system that enables employees to search internal documents using simple natural language questions.
+
+Instead of manually reading long policy PDFs, users simply ask:
+
+“What is the maternity leave policy?”
+“What is the onboarding process for new employees?”
+“What is the reimbursement limit for travel?”
+
+✨ The system retrieves the relevant text chunks using FAISS and generates a grounded answer using an LLM.
+
+## ⭐ Key Features
+- 📄 Upload PDFs & Documents through a clean UI
+- 🧩 Semantic Chunking for better context retrieval
+- 🧠 RAG Pipeline with FAISS retrieval + LLM answer generation
+- 🏢 Company-wise isolated indexes
+- 🔐 Role-based access (Admin & Employee)
+- 💬 Chat-style interface for querying enterprise documents
+- ⚙️ Modular ML pipeline (swap embedding/LLM models easily)
+- 📈 Scalable microservice architecture
+## 🏗️ System Architecture
+<img width="789" height="242" alt="image" src="https://github.com/user-attachments/assets/09ffe94b-d028-4b66-a440-6aa1178fcbe9" />
+## 🔄 RAG Workflow
+<img width="338" height="461" alt="image" src="https://github.com/user-attachments/assets/24212e1c-86f4-42f8-9bb4-66e59dc69e2c" />
+
+## 🛠️ Tech Stack
+### Frontend
+
+- ⚛️ React.js
+- TailwindCSS
+- Axios
+
+### Backend
+
+- 🚀 Node.js
+- Express.js
+- Multer (file uploads)
+- JWT Authentication
+
+### ML Service
+
+- 🧠 FastAPI
+- FAISS Vector Store
+- LLM (Gemini/OpenAI)
+- LangChain components
