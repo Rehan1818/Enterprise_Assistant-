@@ -1,0 +1,3 @@
+This is a sample text document for RAG testing.
+We will use this text to test how our splitter divides content into smaller parts.
+Each chunk should overlap slightly to retain context.

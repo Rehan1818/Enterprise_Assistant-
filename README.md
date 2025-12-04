@@ -54,6 +54,7 @@ Instead of manually reading long policy PDFs, users simply ask:
 - 💬 Chat-style interface for querying enterprise documents
 - ⚙️ Modular ML pipeline (swap embedding/LLM models easily)
 - 📈 Scalable microservice architecture
+  
 ## 🏗️ System Architecture
 <img width="789" height="242" alt="image" src="https://github.com/user-attachments/assets/09ffe94b-d028-4b66-a440-6aa1178fcbe9" />
 
